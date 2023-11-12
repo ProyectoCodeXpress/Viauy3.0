@@ -1,0 +1,53 @@
+Header:
+Para editar el headeer debes dirigirte a:
+src/vista/partials/head.php
+
+footer:
+Para editar el footer debes dirigirte a:
+src/vista/partials/footer.php
+
+
+
+para crear una pagina nueva:
+
+dirigete a src/controlador
+Importante: Si quires crear un nuevo tipo de pagina, ejemplo, quieres crear las opciones de "admin", por lo tanto tendrias que crear el archivo Admin_Controller.php.
+Si no es asi y solo quires crear otra pagina como "about" podrias usar el Index_Controller.php.
+
+Una vez dentro del controlador veras lo siguiente:
+
+use Codexpress\viauyex\libs\Controlador;
+
+
+class Index_Controller extends Controlador
+{
+  public function index()
+  {
+    $this->cargarVista("index/index");
+  }
+  public function help()
+  {
+    $this->cargarVista("index/help");
+  }
+}
+
+
+para crear una pagina nueva, en este caso "about", haremos lo siguiente:
+
+a la clase Index_Controller le agregaremos una nueva funcion:
+  public function about()
+es muy importante que la funcion tenga el mismo nombre que la pagina que vamos a crear, ya que si no es asi, da error.
+
+a dentro de esta funcion agregaremos lo siguiente:
+    $this->cargarVista("index/about");
+
+ya que esta pagina es una extension de "index" y se encuentra en esta categoria, haremos lo siguiente, iremos a la carpeta src/vista/index y crearemos el archivo about.php, adentro de este archivo ira nuestro html, puedes linkear el header, etc.
+
+En el caso de que quiereas crear una nueva categoria de paginas como "admin", tendras que ir a la carpeta src/vista y crear una carpeta llamada "admin", adentro de esta ira tu pagina.
+
+para dirigirse a esta pagina iras al siguiente url:
+localhost/viauy/?c=index&m=about
+la variable "c"  es la categoria o la carpeta y la variable "m" es el archivo o la pagina.
+
+
+

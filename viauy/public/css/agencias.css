@@ -1,0 +1,54 @@
+/* Estilos para la sección de agencias */
+/* .agencias-section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+} */
+
+/* Estilos para el título de la sección de agencias */
+/* .agencias-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+} */
+
+/* Estilos para la lista de agencias */
+/* .agencias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+/* Estilos para la lista de agencias */
+.agencias {
+    text-align: center; /* Alineamos el contenido al centro */
+}
+
+.agencias .agencia {
+    display: inline-block; /* Mostramos las agencias en línea */
+    margin: 10px; /* Espacio entre las agencias (puedes ajustar este valor según sea necesario) */
+    max-width: 150px; /* Ancho máximo de cada agencia (puedes ajustar este valor según sea necesario) */
+}
+
+
+.btn-2 {
+    display: inline-block;
+    padding: 8px 12px; /* Ajusta el padding según sea necesario */
+    border-radius: 20px; /* Reduzco el radio de borde para que se vea más pequeño */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #099FA6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: -10px; /* Ajusta el valor según sea necesario */
+    font-size: 2px; /* Ajusta el tamaño de fuente según sea necesario */
+}
+
+.btn-2:hover {
+    background-color: #feff86;
+} 
+

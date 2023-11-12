@@ -1,0 +1,1 @@
+<a href="?c=empresa&m=signup"><button class="btn-2">Registrar Empresa</button></a>

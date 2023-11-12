@@ -1,0 +1,14 @@
+{
+    "license": "proprietary",
+    "name": "codexpress/viauy",
+    "description": "descripcion",
+    "autoload": {
+        "psr-4": {
+            "Codexpress\\viauy\\": "src/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "tecnickcom/tcpdf": "^6.6"
+    }
+}
