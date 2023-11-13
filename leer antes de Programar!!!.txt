@@ -1,0 +1,85 @@
+Pasos para poder empezar a programar:
+
+1-Cambia el nombre de la carpeta a "viauy"
+2-Borra la carpeta vendor
+3-modifica el archivo composer.json:
+antes:
+{
+    "license": "proprietary",
+    "name": "codexpress/viauyex",
+    "description": "descripcion",
+    "autoload": {
+        "psr-4": {
+            "Codexpress\\viauyex\\": "src/"
+        }
+    },
+    "require": {}
+}
+
+despues:
+{
+    "license": "proprietary",
+    "name": "codexpress/viauy",
+    "description": "descripcion",
+    "autoload": {
+        "psr-4": {
+            "Codexpress\\viauy\\": "src/"
+        }
+    },
+    "require": {}
+}
+
+4- Abre una terminal en el proyecto e instala la carpeta vendor con el siguiente comando:
+composer install
+
+5- Modifica los siguintes archivos:
+src/libs
+        -App.php
+        -Conexion.php
+        -Controlador.php
+        -Database.php
+antes:
+namespace Codexpress\viauyex\libs;
+
+despues:
+namespace Codexpress\viauy\libs;
+
+
+
+src/controlador
+        -Index_Controller.php
+        -User_Controller.php
+
+antes:
+use Codexpress\viauyex\libs\Controlador;
+
+despues:
+use Codexpress\viauyex\libs\Controlador;
+
+6- Configurar la base de datos:
+para configurar la base de datos iremos al archivo config/config.php
+
+veremos lo siguiente:
+<?php
+
+//define('URL', 'http://localhost/mvc/');
+define('URL', 'http://' . $_SERVER['HTTP_HOST'] . '//');
+
+//conexion a la base de datos
+define('HOST', 'localhost');
+define('PORT_DB', '3306');
+define('DB', 'viauy');
+define('USER', 'root');
+define('PASSWORD', '');
+define('CHARSET', 'utf8mb4');
+
+llena los campos:
+
+DB: (El Nombre de tu Base De datos)
+USER: tu nombre de usuario
+PASSWORD: si tienes contraseña en sql, tu contraseña, si no tienes deja el campo vacio
+PORT_DB: El puerto de mysql configurado en tu pc por lo general es 3306 o 3307
+
+--------------------------------------------------------------------------
+
+Luego de esto ya podrias a empezar a Programar tu aplicacion Viauy, suerte.

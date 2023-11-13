@@ -1,0 +1,122 @@
+.contenido2 {
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    margin: 0;
+}
+
+.cuadro-contacto {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 200px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+
+/* foooter */
+
+footer{
+    margin-top: 500px;
+    text-align: center;
+    padding: 20px;
+    color: var(--color1);
+    background-color: var(--color3);    
+}
+
+/* footer end */
+
+
+/*contacto*/
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.formulario-contacto {
+    width: 100%; /* Cambiado a 100% */
+    max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto;
+    background-color: #fff; /* Fondo del formulario */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-comentario {
+    width: calc(100% - 20px);
+    height: 300px; /* Altura según tus preferencias (en píxeles) */
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff; /* Fondo del formulario */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ... Resto del estilo sigue igual ... */
+
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
+    .cuadro-contacto {
+        padding: 100px;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 767px) {
+    .cuadro-contacto {
+        padding: 50px;
+    }
+    .formulario-contacto {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para pantallas pequeñas (como smartphones) */
+@media screen and (max-width: 575px) {
+    .cuadro-contacto {
+        padding: 30px;
+    }
+    .formulario-contacto {
+        padding: 10px;
+    }
+    .input-comentario {
+        height: 150px;
+    }
+}
