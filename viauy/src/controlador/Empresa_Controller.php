@@ -11,6 +11,11 @@ class Empresa_Controller extends Controlador
   {
     $this->cargarVista("empresa/login");
   }
+
+  public function crear()
+  {
+    $this->cargarVista("empresa/viajes/agregarbus");
+  }
   // do
   public function doLogin()
 {

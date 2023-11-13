@@ -37,6 +37,9 @@ class Index_Controller extends Controlador
   {
     $this->cargarVista("index/admin");
   }
- 
+  public function crear()
+  {
+    $this->cargarVista("empresa/viajes/agregarbus");
+  }
 
 }

@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
           // Manejar la respuesta del controlador PHP aquí
           if (data.message === "success") {
             // Redirigir a una página de bienvenida para la empresa
-            window.location.href = "index.php?c=index&m=admin";
+            window.location.href = "index.php?c=Empresa&m=bus";
           } else {
             dataMsg.innerHTML = data.message;
             dataMsg.classList.remove("msg-success");

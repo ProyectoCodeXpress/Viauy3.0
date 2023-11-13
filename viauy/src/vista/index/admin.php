@@ -13,7 +13,7 @@
 
     
     <section class="botones-container">
-        <a href="?c=admin&m=alta" class="boton">Alta de Datos</a>
+        <button><a href="?c=&m=" class="boton">Alta de Datos</a></button>
         <a href="?c=admin&m=baja" class="boton">Baja de Datos</a>
         <a href="?c=admin&m=modificacion" class="boton">Modificación de Datos</a>
     </section>
