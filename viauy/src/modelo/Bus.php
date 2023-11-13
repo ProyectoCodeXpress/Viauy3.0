@@ -1,6 +1,6 @@
 <?php
 
-namespace Codexpress\viauy\banoo;
+namespace Codexpress\viauy\modelo;
 
 use PDOException;
 use Codexpress\viauy\libs\Conexion;
